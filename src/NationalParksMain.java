@@ -89,8 +89,7 @@ public class NationalParksMain extends JPanel {
 
 		// timer to switch images every X seconds
 		Timer timer = new Timer(5000, new ActionListener() {
-			public void actionPerformed(ActionEvent evt) {
-
+			public void actionPerformed(ActionEvent e) {
 				if (label1 != null) {
 					remove(label1);
 					label1 = null;
@@ -117,8 +116,8 @@ public class NationalParksMain extends JPanel {
 						System.out.println("Null pointer on this URL: " + urls[index].toString());
 						index++;
 					}
-				} catch (Exception e) {
-					e.printStackTrace();
+				} catch (Exception ex) {
+					ex.printStackTrace();
 					index++;
 					return;
 				}
