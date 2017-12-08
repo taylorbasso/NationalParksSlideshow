@@ -95,7 +95,7 @@ public class NationalParksMain extends JPanel {
 					label1 = null;
 					index++;
 					icon = null;
-					if (index == urls.length - 1) {
+					if (index == urls.length) {
 						index = 0;
 					}
 				}
